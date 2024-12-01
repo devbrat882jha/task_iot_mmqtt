@@ -19,35 +19,35 @@ Start by cloning the repository to your local machine:
 ```bash
 git clone https://github.com/devbrat882jha/task_iot_mmqtt.git
 
-**2. Create a Virtual Environment**
-
+**  2. Create a Virtual Environment
+**
     python -m venv env
 
-**3. Install the Required Python Dependencies**
-
+**3.Install the Required Python Dependencies
+**
     pip install -r requirements.txt
 
-**4. Install RabbitMQ**
-
-**5. Pull the Latest MongoDB Docker Image**
-
+**  4. Install RabbitMQ
+**
+**5. Pull the Latest MongoDB Docker Image
+**
      docker pull mongo:latest
 
-**6. Run MongoDB in Docker Container**
-
+**  6. Run MongoDB in Docker Container
+**
      docker run -d --name mongodb-container -p 27017:27017 mongo:latest
 
-**7. Run the RabbitMQ Client**
-
+**  7. Run the RabbitMQ Client
+**
      cd app/
      python mq_tt_client.py
 
-**8. Run the RabbitMQ Consumer**
-
+**  8. Run the RabbitMQ Consumer
+**
      python rabbitmq_consumer.py
 
-**9. Start the FastAPI Application**
-     uvicorn main.app --reload
+**9. Start the FastAPI Application
+**     uvicorn main.app --reload
      The FastAPI application will be running at http://localhost:8000.
      Access apis at http://localhost:8000/docs
 
